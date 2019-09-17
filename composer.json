@@ -1,0 +1,24 @@
+{
+    "name": "nathanday/module-subcategoryblocks",
+    "description": "Extend Magento 2 Category Display Options to add Functionality to show Subcategory Blocks or List",
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "authors":[
+        {
+            "name":"Nathan Day",
+            "email":"nathanday92@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "NathanDay\\SubCategoryBlocks\\": ""
+        }
+    }
+}
