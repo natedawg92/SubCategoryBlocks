@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Block\Category\View" type="NathanDay\SubCategoryBlocks\Block\Category\View" />
+
+    <type name="Magento\Catalog\Model\Category\Attribute\Source\Mode">
+        <plugin sortOrder="1" name="NathanDayCategoryTilingMode"
+                type="NathanDay\SubCategoryBlocks\Plugin\Catalog\Model\Category\Attribute\Source\Mode"/>
+    </type>
+</config>
