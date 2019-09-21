@@ -1,0 +1,103 @@
+.category {
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+
+        .categories-list & {
+            flex-flow: column;
+        }
+    }
+
+    &-item {
+        .categories-grid & {
+            min-width: 240px;
+            width: 100%;
+
+            @media (min-width: 510px) {
+                width: calc((100% - 4px) / 2);
+            }
+
+            @media (min-width:768px) {
+                width: 100%;
+            }
+
+            @media (min-width:1024px) {
+                width: calc((100% - 4px) / 2);
+            }
+
+            @media (min-width:1200px) {
+                width: calc((100% - 6px) / 3);
+            }
+
+            .page-layout-1column & {
+                @media (min-width:768px) {
+                    width: calc((100% - 6px) / 3);
+                }
+
+                @media (min-width:1024px) {
+                    width: calc((100% - 8px) / 4);
+                }
+            }
+        }
+
+        &-photo {
+            display: flex;
+
+            .category-image-container {
+                margin: 0 auto;
+
+                img {
+                    max-width: 240px;
+                    max-height: 240px;
+                }
+            }
+        }
+
+        &-name,
+        &-link {
+            display: block;
+            line-height: 40px;
+        }
+
+        &-description {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 60px;
+
+            .categories-list & {
+                -webkit-line-clamp: 11;
+            }
+        }
+
+        &-info {
+            border: 1px solid transparent;
+            display: flex;
+            padding: 10px;
+
+            &:hover {
+                background: #ffffff;
+                box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.3);
+                border: 1px solid #bbbbbb;
+                position: relative;
+                z-index: 2;
+            }
+
+            .categories-grid & {
+                flex-flow: column;
+            }
+        }
+
+        &-details {
+            .categories-list & {
+                margin-left: 20px;
+            }
+
+            .categories-grid & {
+                text-align: center;
+                margin-top: auto;
+            }
+        }
+    }
+}
