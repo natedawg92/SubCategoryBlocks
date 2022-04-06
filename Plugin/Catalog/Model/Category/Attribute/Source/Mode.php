@@ -16,19 +16,13 @@ class Mode {
     {
         $tilingOptions = [
             ['value' => Category::DM_BLOCKS, 'label' => __('Sub Category Blocks only')],
-            ['value' => Category::DM_BLOCKS_AND_PAGE, 'label' => __('Sub Category Blocks and Static Blocks')],
+            ['value' => Category::DM_BLOCKS_AND_PAGE, 'label' => __('Sub Category Blocks and Static Block')],
             ['value' => Category::DM_BLOCKS_AND_PRODUCTS, 'label' => __('Sub Category Blocks and Products')],
-            [
-                'value' => Category::DM_BLOCKS_AND_PAGE_AND_PRODUCTS, '
-                label' => __('Sub Category Blocks, Static Blocks and Pages')
-            ],
+            ['value' => Category::DM_BLOCKS_AND_PAGE_AND_PRODUCTS, 'label' => __('Sub Category Blocks, Static Block and Products')],
             ['value' => Category::DM_LIST, 'label' => __('Sub Category List only')],
-            ['value' => Category::DM_LIST_AND_PAGE, 'label' => __('Sub Category List and Static Blocks')],
+            ['value' => Category::DM_LIST_AND_PAGE, 'label' => __('Sub Category List and Static Block')],
             ['value' => Category::DM_LIST_AND_PRODUCTS, 'label' => __('Sub Category List and Products')],
-            [
-                'value' => Category::DM_LIST_AND_PAGE_AND_PRODUCTS, '
-                label' => __('Sub Category List, Static Blocks and Pages')
-            ],
+            ['value' => Category::DM_LIST_AND_PAGE_AND_PRODUCTS, 'label' => __('Sub Category List, Static Block and Products')]
         ];
 
         return array_merge($result, $tilingOptions);
